@@ -7,12 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5/CMakeLists.txt"
-  "/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5/MathFunctions/CMakeLists.txt"
-  "/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5/TutorialConfig.h.in"
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
+  "CMakeLists.txt"
+  "TutorialConfig.h.in"
   "/usr/share/cmake-3.10/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake"
@@ -20,7 +19,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/share/cmake-3.10/Modules/CheckSymbolExists.cmake"
   "/usr/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/share/cmake-3.10/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.10/Modules/Compiler/GNU-CXX.cmake"
@@ -42,11 +40,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "TutorialConfig.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "MathFunctions/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Tutorial.dir/DependInfo.cmake"
-  "MathFunctions/CMakeFiles/MathFunctions.dir/DependInfo.cmake"
   )

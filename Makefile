@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5
+CMAKE_SOURCE_DIR = /mnt/c/Users/kentr/Documents/GitHub/Cmake/help/guide/tutorial/step5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build
+CMAKE_BINARY_DIR = /mnt/c/Users/kentr/Documents/GitHub/Cmake/help/guide/tutorial/step5
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -103,8 +103,8 @@ list_install_components/fast: list_install_components
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -137,9 +137,9 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/kentr/Documents/GitHub/Cmake/help/guide/tutorial/step5/CMakeFiles /mnt/c/Users/kentr/Documents/GitHub/Cmake/help/guide/tutorial/step5/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/kentr/Documents/GitHub/Cmake/help/guide/tutorial/step5/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -179,19 +179,6 @@ Tutorial: cmake_check_build_system
 Tutorial/fast:
 	$(MAKE) -f CMakeFiles/Tutorial.dir/build.make CMakeFiles/Tutorial.dir/build
 .PHONY : Tutorial/fast
-
-#=============================================================================
-# Target rules for targets named MathFunctions
-
-# Build rule for target.
-MathFunctions: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 MathFunctions
-.PHONY : MathFunctions
-
-# fast build rule for target.
-MathFunctions/fast:
-	$(MAKE) -f MathFunctions/CMakeFiles/MathFunctions.dir/build.make MathFunctions/CMakeFiles/MathFunctions.dir/build
-.PHONY : MathFunctions/fast
 
 tutorial.o: tutorial.cxx.o
 
@@ -234,7 +221,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... install"
-	@echo "... MathFunctions"
 	@echo "... tutorial.o"
 	@echo "... tutorial.i"
 	@echo "... tutorial.s"

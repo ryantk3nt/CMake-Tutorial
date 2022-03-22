@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build -I/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5/MathFunctions 
+CXX_INCLUDES = -I/mnt/c/Users/kentr/Documents/GitHub/Cmake/help/guide/tutorial/step5 
 
