@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5/MathFunctions/MathFunctions.h
+
+/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5/tutorial.cxx
+cmath
+-
+iostream
+-
+string
+-
+TutorialConfig.h
+/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5/TutorialConfig.h
+MathFunctions.h
+/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5/MathFunctions.h
+
+TutorialConfig.h
+

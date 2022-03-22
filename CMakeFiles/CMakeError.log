@@ -1,0 +1,70 @@
+Determining if the log exist failed with the following output:
+Change Dir: /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5db35/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5db35.dir/build.make CMakeFiles/cmTC_5db35.dir/build
+make[1]: Entering directory '/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5db35.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_5db35.dir/CheckSymbolExists.c.o   -c /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_5db35
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5db35.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_5db35.dir/CheckSymbolExists.c.o  -o cmTC_5db35 
+CMakeFiles/cmTC_5db35.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `log'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_5db35.dir/build.make:97: recipe for target 'cmTC_5db35' failed
+make[1]: *** [cmTC_5db35] Error 1
+make[1]: Leaving directory '/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_5db35/fast' failed
+make: *** [cmTC_5db35/fast] Error 2
+
+File /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef log
+  return ((int*)(&log))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the exp exist failed with the following output:
+Change Dir: /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6a541/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6a541.dir/build.make CMakeFiles/cmTC_6a541.dir/build
+make[1]: Entering directory '/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6a541.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_6a541.dir/CheckSymbolExists.c.o   -c /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_6a541
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6a541.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_6a541.dir/CheckSymbolExists.c.o  -o cmTC_6a541 
+CMakeFiles/cmTC_6a541.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `exp'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6a541.dir/build.make:97: recipe for target 'cmTC_6a541' failed
+make[1]: *** [cmTC_6a541] Error 1
+make[1]: Leaving directory '/mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_6a541/fast' failed
+make: *** [cmTC_6a541/fast] Error 2
+
+File /mnt/c/Users/kentr/Documents/GitHub/cmake/help/guide/tutorial/Step5_build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef exp
+  return ((int*)(&exp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
